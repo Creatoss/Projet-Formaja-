@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta ```html <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Consultation en Ligne</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue sur la plateforme de consultation en ligne</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="/pages/login.html">Se Connecter</a></li>
+          <li><a href="/pages/signup.html">S'inscrire</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <img
+        src="/images/Docteur.png"
+        alt="Image de présentation"
+        class="image-presentation"
+      />
+    </section>
+    <main>
+      <section>
+        <h2>Nos Services</h2>
+        <p>
+          Consultez facilement les médecins disponibles et prenez rendez-vous en
+          ligne !
+        </p>
+        <a href="/pages/signup.html" class="btn">Commencer</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Consultation en Ligne</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

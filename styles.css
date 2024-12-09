@@ -1,0 +1,120 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background: linear-gradient(135deg, #0073e6, #005bb5);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-presentation {
+  width: 50%; /* Réduit la largeur de l'image à 50% de son conteneur */
+  max-width: 300px; /* Limite la largeur maximale à 300 pixels */
+  height: auto; /* Maintient le ratio de l'image */
+  object-fit: cover; /* Pour conserver le ratio de l'image */
+  margin: 0 auto 20px; /* Centre l'image horizontalement et ajoute un espacement en bas */
+  display: block; /* Nécessaire pour que margin: auto fonctionne */
+  border-radius: 10px; /* Arrondir les coins de l'image */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Couleur d'accentuation au survol */
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 20px 0;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px); /* Effet de levée au survol */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0073e6;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.form-container {
+  max-width: 400px;
+  margin: 0 auto; /* Centre le formulaire */
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espacement entre les champs */
+}
+
+.form-input {
+  width: 100%; /* Prend toute la largeur du conteneur */
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  width: 150px; /* Set a fixed width for the button */
+  padding: 8px; /* Adjust padding for a smaller button */
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Optional: Adjust font size */
+}
+.submit-button:hover {
+  background-color: #218838; /* Couleur plus foncée au survol */
+}
+
+.signup-prompt {
+  text-align: center; /* Centre le texte */
+  margin-top: 15px;
+}
