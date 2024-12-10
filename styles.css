@@ -1,13 +1,18 @@
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "DM Sans", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
 }
 
 header {
-  background: linear-gradient(135deg, #0073e6, #005bb5);
-  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 107, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   text-align: center;
   padding: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -16,6 +21,16 @@ header {
 .image-presentation {
   width: 50%; /* Réduit la largeur de l'image à 50% de son conteneur */
   max-width: 300px; /* Limite la largeur maximale à 300 pixels */
+  height: auto; /* Maintient le ratio de l'image */
+  object-fit: cover; /* Pour conserver le ratio de l'image */
+  margin: 0 auto 20px; /* Centre l'image horizontalement et ajoute un espacement en bas */
+  display: block; /* Nécessaire pour que margin: auto fonctionne */
+  border-radius: 10px; /* Arrondir les coins de l'image */
+}
+
+.image-login {
+  width: 50%; /* Réduit la largeur de l'image à 50% de son conteneur */
+  max-width: 200px; /* Limite la largeur maximale à 300 pixels */
   height: auto; /* Maintient le ratio de l'image */
   object-fit: cover; /* Pour conserver le ratio de l'image */
   margin: 0 auto 20px; /* Centre l'image horizontalement et ajoute un espacement en bas */
@@ -45,19 +60,39 @@ nav ul li a:hover {
 }
 
 main {
-  padding: 40px;
   text-align: center;
+  padding: 50px;
 }
 
-h1,
+h1 {
+  color: #ffffff;
+}
 h2 {
-  color: #333;
+  color: #000000;
+}
+.btn1 {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 0;
+  background-color: rgba(128, 128, 128, 0.3); /* Semi-transparent gray */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: subtle border */
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn1:hover {
+  background-color: rgba(128, 128, 128, 0.5); /* Darker gray on hover */
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
 .btn {
   display: inline-block;
   padding: 15px 30px;
-  margin: 20px 0;
+  margin: 10px 0;
   background-color: #0073e6;
   color: white;
   text-decoration: none;
@@ -74,7 +109,13 @@ h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #0073e6;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 107, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   color: white;
   position: relative;
   bottom: 0;
@@ -100,6 +141,12 @@ footer {
   border-radius: 4px;
 }
 
+p {
+  margin: 0px;
+}
+h2 {
+  margin: 5px;
+}
 .submit-button {
   width: 150px; /* Set a fixed width for the button */
   padding: 8px; /* Adjust padding for a smaller button */
